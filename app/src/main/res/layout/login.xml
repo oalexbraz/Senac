@@ -8,8 +8,8 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_width="431dp"
+        android:layout_height="100dp"
         android:background="#FFD700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/login_editText_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -34,8 +34,9 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/round_borger"
+        android:drawableStart="@drawable/ic_baseline_account_circle_24"
         android:ems="10"
-        android:hint="Usuario"
+        android:hint=" Usuario"
         android:inputType="textPersonName"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/login_editText_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -51,20 +52,21 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:autofillHints=""
         android:background="@drawable/round_borger"
+        android:drawableStart="@android:drawable/ic_lock_lock"
         android:ems="10"
         android:hint="Senha"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:padding="15dp"
         android:password="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        android:importantForAutofill="no"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/login_editText_usuario" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/login_editText_entrar"
         android:layout_width="212dp"
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
@@ -75,14 +77,16 @@
         android:background="@drawable/botao_login"
         android:text="ENTRAR"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/login_editText_senha" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="148dp"
-        android:layout_height="144dp"
+        android:layout_width="95dp"
+        android:layout_height="104dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user" />
@@ -96,10 +100,28 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
-        android:text="@string/n_o_possuir_uma_conta_crie_uma"
+        android:text="Não possui um conta? Crie uma já!"
         android:textColor="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/login_editText_entrar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="297dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:text="Bem Vindo"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
