@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">projeto_padrao</string>
+    <string name="n_o_possuir_uma_conta_crie_uma">Não possuir uma conta? Crie uma</string>
 </resources>
