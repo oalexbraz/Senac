@@ -15,7 +15,8 @@ import java.sql.Struct;
 public class LoginActivity extends AppCompatActivity {
 
     //DECLARANDO OBJETOS
-    EditText login_editText_usuario, login_editText_senha;
+    EditText login_editText_usuario;
+    EditText login_editText_senha;
     Button login_button_usuario;
     TextView login_text_registrar;
 
@@ -48,9 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-        Log.d( "MEU_LOG",  "LOG 1");
-        Log.d( "MEU_LOG",  "LOG 2");
-        Log.d( "MEU_LOG",  "LOG 3");
+
     }
 
 
