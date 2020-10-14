@@ -99,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/regitrar_editText_usuario" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/registrar_button_cadsastrar"
         android:layout_width="218dp"
         android:layout_height="45dp"
         android:layout_marginTop="40dp"
@@ -121,5 +121,17 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/registrar_text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Já é usuario? Faça Login"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrar_button_cadsastrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
