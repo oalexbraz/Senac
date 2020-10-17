@@ -1,4 +1,4 @@
-package com.example.projeto_padrao;
+package com.example.projeto_padrao.activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.projeto_padrao.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
