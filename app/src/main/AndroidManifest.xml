@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name="DATABASE" android:value="sugar_example.db">
+        android:name="com.orm.SugarApp">
+
+        <meta-data android:name="DATABASE" android:value="projeto_padrao_database.db" />
+        <meta-data android:name="VERSION" android:value="6" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.projeto_padrao.models" />
+
+
+
         <activity android:name=".activitys.RegisterActivity"></activity>
         <activity android:name=".activitys.LoginActivity">
             <intent-filter>
@@ -44,17 +52,6 @@
 
 
 
-<application android:label="@string/app_name" android:icon="@drawable/icon"
-android:name="com.orm.SugarApp">
-.
-.
-<meta-data android:name="DATABASE" android:value="sugar_example.db" />
-<meta-data android:name="VERSION" android:value="2" />
-<meta-data android:name="QUERY_LOG" android:value="true" />
-<meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example" />
-.
-.
-</application>
 
 
 

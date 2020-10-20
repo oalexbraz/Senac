@@ -1,11 +1,38 @@
 package com.example.projeto_padrao.models;
 
-public class Usuario {
+import com.example.projeto_padrao.activitys.LoginActivity;
+import com.orm.SugarRecord;
+
+public class Usuario extends SugarRecord {
     private String usuario;
     private String email;
     private String senha;
     private Boolean logado;
     private Boolean registrado;
+
+    public Usuario() {
+    }
+
+    public Usuario (String usuario, String senha){
+        this.usuario = usuario;
+        this.senha = senha;
+
+    }
+
+      public void logar(LoginActivity loginActivity) {
+
+        this.logado = true;
+
+
+    }
+
+
+
+    public void resgitrar() {
+
+        this.registrado = true;
+
+    }
 
 
     public String getUsuario() {
@@ -40,23 +67,12 @@ public class Usuario {
         this.logado = logado;
     }
 
-    public void logar() {
-
-        this.logado = true;
-
-
+    public Boolean getRegistrado() {
+        return registrado;
     }
 
-    public void resgitrar() {
-
-        this.registrado = true;
-
-    }
-
-    public Usuario (String usuario,String senha){
-        this.usuario = usuario;
-        this.senha = senha;
-
+    public void setRegistrado(Boolean registrado) {
+        this.registrado = registrado;
     }
 }
 

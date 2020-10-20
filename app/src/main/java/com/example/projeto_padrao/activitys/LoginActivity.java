@@ -17,6 +17,8 @@ import android.widget.TextView;
 import com.example.projeto_padrao.R;
 import com.example.projeto_padrao.models.Usuario;
 
+import java.util.List;
+
 public class LoginActivity extends AppCompatActivity {
 
 
@@ -53,7 +55,12 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 // ---------------------------------------------------------------------- //
+   inicializandoComponentes();
 
+
+    }
+
+    private void inicializandoComponentes() {
         login_button_usuario.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -61,7 +68,9 @@ public class LoginActivity extends AppCompatActivity {
                 String senha = login_editText_senha.getText().toString();
 
                 Usuario usuarioLogado = new Usuario(usuario, senha);
-                usuarioLogado.logar();
+                usuarioLogado.logar(LoginActivity.this);
+
+
 
                 Log.d("autenticação", " \nUSUARIO:" + usuario + "\nSENHA:" + senha);
 
@@ -71,12 +80,7 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-
     }
-
-
-
-
 
 
     @Override
